@@ -23,3 +23,11 @@ char readchar(){
     for(;isspace(buf[bufpos]);bufpos++);
     return buf[bufpos++];
 }
+int readstr(char* s){
+    int cur=0;
+    for(;isspace(buf[bufpos]);bufpos++);
+    for(;!isspace(buf[bufpos]);bufpos++)
+        s[cur++]=buf[bufpos];
+    s[cur]='\0';
+    return cur;
+}
