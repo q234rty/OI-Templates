@@ -31,6 +31,8 @@ struct graph{
                 int v=e[i].to;
                 if ((dist[v]!=-1) || (!e[i].cap))
                     continue;
+                if (t==v)
+                    return true;
                 dist[v]=dist[u]+1;
                 q[++r]=v;
             }
