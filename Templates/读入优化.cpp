@@ -1,7 +1,4 @@
-#include <cctype>
-#include <cstdio>
-#include <cstring>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 const int MAXSIZE=30000020;
 int bufpos;
