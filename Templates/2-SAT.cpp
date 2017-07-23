@@ -68,4 +68,4 @@ struct twosat{
         }
         return true;
     }
-}g;
+};
